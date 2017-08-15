@@ -1,5 +1,16 @@
-var title       = document.querySelector(".title");
-title.textContent = 'ROGPEnutri';
+
+main();
+
+function main(){ 
+    setTitle();
+    addNewPacient();
+    calcIMC();
+}
+
+function setTitle(){
+    var title       = document.querySelector(".title");
+    title.textContent = 'ROGPEnutri';   
+}
 
 function calcIMC(){
     var pacientes         = document.querySelectorAll(".paciente");
@@ -35,6 +46,5 @@ function validationAltura(altura, tdIMC,paciente){
     }else{
         return altura;
     }
-} 
+}
 
-calcIMC();
