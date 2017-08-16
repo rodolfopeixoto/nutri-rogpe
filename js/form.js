@@ -17,6 +17,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     var ul = document.querySelector('#mensagem-erro');
     ul.innerHTML = '';
+    
 });
 
 
